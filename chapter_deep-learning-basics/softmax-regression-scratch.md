@@ -38,7 +38,7 @@ b.attach_grad()
 
 ## 实现softmax运算
 
-在介绍如何定义softmax回归之前，我们先描述一下对如何对多维`NDArray`按维度操作。在下面的例子中，给定一个`NDArray`矩阵`X`。我们可以只对其中同一列（`axis=0`）或同一行（`axis=1`）的元素求和，并在结果中保留行和列这两个维度（`keepdims=True`）。
+在介绍如何定义softmax回归之前，我们先描述一下如何对多维`NDArray`按维度操作。在下面的例子中，给定一个`NDArray`矩阵`X`。我们可以只对其中同一列（`axis=0`）或同一行（`axis=1`）的元素求和，并在结果中保留行和列这两个维度（`keepdims=True`）。
 
 ```{.python .input  n=5}
 X = nd.array([[1, 2, 3], [4, 5, 6]])
